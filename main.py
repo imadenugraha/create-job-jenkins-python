@@ -1,8 +1,10 @@
 from create_job import create_job
+import sys
 
 
 def main():
-    create = create_job()
+    name = sys.argv[1]
+    create = create_job(job_name=name)
 
     if not create:
         print(f"Create job failed!")
