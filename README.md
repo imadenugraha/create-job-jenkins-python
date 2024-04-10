@@ -28,10 +28,9 @@ $ poetry install --no-root
 JENKINS_USER=user
 JENKINS_TOKEN=askjdnasfajskaeasfn
 JENKINS_URL=https://myjenkins.com
-JENKINS_JOB=App/app(staging)
 ```
 
 6. You can run this script using poetry run. Here is the example
 ```shell
-$ poetry run python3 main.py
+$ poetry run python3 main.py /myApp/Staging
 ```
