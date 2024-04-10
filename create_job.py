@@ -4,11 +4,10 @@ import logging
 import os
 
 
-def create_job() -> bool:
+def create_job(job_name: str) -> bool:
     load_dotenv()
 
     server = jenkins_session()
-    job_name = os.getenv('JOB_NAME')
 
     with open('./Jenkins_Job_Config/config.xml', 'r') as f:
         job_config = f.read()
